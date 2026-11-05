@@ -1,0 +1,6 @@
+[package]
+name = "mixer-core"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]

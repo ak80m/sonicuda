@@ -1,0 +1,7 @@
+[package]
+name = "mixer-cuda"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+mixer-core = { path = "../mixer-core" }

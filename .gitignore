@@ -1,0 +1,20 @@
+# Rust
+/target/
+**/*.rs.bk
+
+# CUDA / C++
+build/
+cmake-build-*/
+*.o
+*.a
+*.so
+*.dll
+*.exe
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store

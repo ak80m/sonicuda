@@ -1,0 +1,13 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/mixer-core",
+    "crates/mixer-cpu",
+    "crates/mixer-cuda",
+    "crates/mixer-app",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
