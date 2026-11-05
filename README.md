@@ -26,7 +26,40 @@ Requirements:
 - CMake
 - NVIDIA CUDA Toolkit (when developing CUDA components)
 
+## Check environment
+
+```bash
+echo "=== OS ==="
+cat /etc/os-release
+
+echo "=== CPU ==="
+lscpu | grep -E 'Model name|Architecture|CPU\(s\)'
+
+echo "=== RAM ==="
+free -h
+
+echo "=== NVIDIA GPU ==="
+lspci | grep -iE 'nvidia|vga|3d'
+
+echo "=== NVIDIA DRIVER ==="
+nvidia-smi
+
+echo "=== CUDA COMPILER ==="
+nvcc --version
+
+echo "=== RUST ==="
+rustc --version
+cargo --version
+
+echo "=== C++ COMPILER ==="
+g++ --version | head -1
+
+echo "=== CMAKE ==="
+cmake --version | head -1
+```
+
 ## Build
 
 ```bash
 cargo build --workspace
+```
